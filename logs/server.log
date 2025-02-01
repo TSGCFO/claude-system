@@ -1,0 +1,159 @@
+{"level":"info","message":"Registered tool: read_file","timestamp":"2025-02-01T18:41:17.839Z"}
+{"level":"info","message":"Registered tool: write_file","timestamp":"2025-02-01T18:41:17.842Z"}
+{"level":"info","message":"Registered tool: list_files","timestamp":"2025-02-01T18:41:17.842Z"}
+{"level":"info","message":"Registered tool: delete_file","timestamp":"2025-02-01T18:41:17.843Z"}
+{"level":"info","message":"Registered tool: search_file_content","timestamp":"2025-02-01T18:41:17.843Z"}
+{"level":"info","message":"Registered tool: navigate_web","timestamp":"2025-02-01T18:41:17.843Z"}
+{"level":"info","message":"Registered tool: click_element","timestamp":"2025-02-01T18:41:17.843Z"}
+{"level":"info","message":"Registered tool: type_text","timestamp":"2025-02-01T18:41:17.843Z"}
+{"level":"info","message":"Registered tool: get_page_content","timestamp":"2025-02-01T18:41:17.844Z"}
+{"level":"info","message":"Registered tool: take_screenshot","timestamp":"2025-02-01T18:41:17.844Z"}
+{"level":"info","message":"Registered tool: execute_command","timestamp":"2025-02-01T18:41:17.844Z"}
+{"level":"info","message":"Registered tool: launch_application","timestamp":"2025-02-01T18:41:17.844Z"}
+{"level":"info","message":"Registered tool: get_system_info","timestamp":"2025-02-01T18:41:17.844Z"}
+{"level":"info","message":"Registered tool: process_control","timestamp":"2025-02-01T18:41:17.844Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-02-01T18:41:17.848Z"}
+{"0":"read_file","1":"write_file","10":"execute_command","11":"launch_application","12":"get_system_info","13":"process_control","2":"list_files","3":"delete_file","4":"search_file_content","5":"navigate_web","6":"click_element","7":"type_text","8":"get_page_content","9":"take_screenshot","level":"info","message":"Available tools:","timestamp":"2025-02-01T18:41:17.849Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:41:20.456Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:41:30.613Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:41:38.593Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:41:47.557Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:41:54.991Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:42:04.200Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:42:09.806Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/tools","timestamp":"2025-02-01T18:42:11.336Z"}
+{"body":{"content":"Hello from Claude!","path":"test.txt"},"level":"info","message":"Incoming request","method":"POST","path":"/execute/write_file","timestamp":"2025-02-01T18:42:11.357Z"}
+{"level":"debug","message":"Executing tool: write_file","params":{"content":"Hello from Claude!","path":"test.txt"},"timestamp":"2025-02-01T18:42:11.358Z"}
+{"level":"debug","message":"Tool execution result: write_file","result":{"data":"File written successfully: test.txt","success":true},"timestamp":"2025-02-01T18:42:11.362Z"}
+{"body":{"path":"test.txt"},"level":"info","message":"Incoming request","method":"POST","path":"/execute/read_file","timestamp":"2025-02-01T18:42:11.366Z"}
+{"level":"debug","message":"Executing tool: read_file","params":{"path":"test.txt"},"timestamp":"2025-02-01T18:42:11.366Z"}
+{"level":"debug","message":"Tool execution result: read_file","result":{"data":"Hello from Claude!","success":true},"timestamp":"2025-02-01T18:42:11.367Z"}
+{"body":{"url":"https://example.com"},"level":"info","message":"Incoming request","method":"POST","path":"/execute/navigate_web","timestamp":"2025-02-01T18:42:11.369Z"}
+{"level":"debug","message":"Executing tool: navigate_web","params":{"url":"https://example.com"},"timestamp":"2025-02-01T18:42:11.369Z"}
+{"level":"debug","message":"Tool execution result: navigate_web","result":{"data":{"title":"Example Domain","url":"https://example.com/"},"success":true},"timestamp":"2025-02-01T18:42:12.975Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"POST","path":"/execute/get_page_content","timestamp":"2025-02-01T18:42:12.979Z"}
+{"level":"debug","message":"Executing tool: get_page_content","params":{},"timestamp":"2025-02-01T18:42:12.980Z"}
+{"level":"debug","message":"Tool execution result: get_page_content","result":{"error":"No active webpage. Use navigate_web first.","success":false},"timestamp":"2025-02-01T18:42:12.980Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:42:15.815Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:42:21.811Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:42:27.813Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:42:33.809Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:42:39.808Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:42:45.827Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:42:51.830Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:42:57.842Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:43:03.845Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:43:09.891Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:43:15.909Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:43:22.110Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:43:28.083Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:43:34.834Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:43:41.866Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:43:51.871Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:43:58.903Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:44:07.420Z"}
+{"level":"info","message":"Registered tool: read_file","timestamp":"2025-02-01T18:44:12.905Z"}
+{"level":"info","message":"Registered tool: write_file","timestamp":"2025-02-01T18:44:12.907Z"}
+{"level":"info","message":"Registered tool: list_files","timestamp":"2025-02-01T18:44:12.908Z"}
+{"level":"info","message":"Registered tool: delete_file","timestamp":"2025-02-01T18:44:12.908Z"}
+{"level":"info","message":"Registered tool: search_file_content","timestamp":"2025-02-01T18:44:12.908Z"}
+{"level":"info","message":"Registered tool: navigate_web","timestamp":"2025-02-01T18:44:12.908Z"}
+{"level":"info","message":"Registered tool: click_element","timestamp":"2025-02-01T18:44:12.909Z"}
+{"level":"info","message":"Registered tool: type_text","timestamp":"2025-02-01T18:44:12.909Z"}
+{"level":"info","message":"Registered tool: get_page_content","timestamp":"2025-02-01T18:44:12.909Z"}
+{"level":"info","message":"Registered tool: take_screenshot","timestamp":"2025-02-01T18:44:12.909Z"}
+{"level":"info","message":"Registered tool: execute_command","timestamp":"2025-02-01T18:44:12.909Z"}
+{"level":"info","message":"Registered tool: launch_application","timestamp":"2025-02-01T18:44:12.909Z"}
+{"level":"info","message":"Registered tool: get_system_info","timestamp":"2025-02-01T18:44:12.910Z"}
+{"level":"info","message":"Registered tool: process_control","timestamp":"2025-02-01T18:44:12.910Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-02-01T18:44:12.914Z"}
+{"0":"read_file","1":"write_file","10":"execute_command","11":"launch_application","12":"get_system_info","13":"process_control","2":"list_files","3":"delete_file","4":"search_file_content","5":"navigate_web","6":"click_element","7":"type_text","8":"get_page_content","9":"take_screenshot","level":"info","message":"Available tools:","timestamp":"2025-02-01T18:44:12.914Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:44:13.131Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:44:18.807Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:44:24.821Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/tools","timestamp":"2025-02-01T18:44:26.380Z"}
+{"body":{"content":"Hello from Claude!","path":"test.txt"},"level":"info","message":"Incoming request","method":"POST","path":"/execute/write_file","timestamp":"2025-02-01T18:44:26.400Z"}
+{"level":"debug","message":"Executing tool: write_file","params":{"content":"Hello from Claude!","path":"test.txt"},"timestamp":"2025-02-01T18:44:26.401Z"}
+{"level":"debug","message":"Tool execution result: write_file","result":{"data":"File written successfully: test.txt","success":true},"timestamp":"2025-02-01T18:44:26.404Z"}
+{"body":{"path":"test.txt"},"level":"info","message":"Incoming request","method":"POST","path":"/execute/read_file","timestamp":"2025-02-01T18:44:26.407Z"}
+{"level":"debug","message":"Executing tool: read_file","params":{"path":"test.txt"},"timestamp":"2025-02-01T18:44:26.407Z"}
+{"level":"debug","message":"Tool execution result: read_file","result":{"data":"Hello from Claude!","success":true},"timestamp":"2025-02-01T18:44:26.408Z"}
+{"body":{"url":"https://example.com"},"level":"info","message":"Incoming request","method":"POST","path":"/execute/navigate_web","timestamp":"2025-02-01T18:44:26.410Z"}
+{"level":"debug","message":"Executing tool: navigate_web","params":{"url":"https://example.com"},"timestamp":"2025-02-01T18:44:26.410Z"}
+{"level":"debug","message":"Browser launched","timestamp":"2025-02-01T18:44:26.783Z"}
+{"level":"debug","message":"New page created","timestamp":"2025-02-01T18:44:26.843Z"}
+{"level":"debug","message":"Navigated to https://example.com","timestamp":"2025-02-01T18:44:27.237Z"}
+{"level":"debug","message":"Tool execution result: navigate_web","result":{"data":{"title":"Example Domain","url":"https://example.com/"},"success":true},"timestamp":"2025-02-01T18:44:27.240Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"POST","path":"/execute/get_page_content","timestamp":"2025-02-01T18:44:27.245Z"}
+{"level":"debug","message":"Executing tool: get_page_content","params":{},"timestamp":"2025-02-01T18:44:27.245Z"}
+{"level":"debug","message":"Tool execution result: get_page_content","result":{"data":"<!DOCTYPE html><html><head>\n    <title>Example Domain</title>\n\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <style type=\"text/css\">\n    body {\n        background-color: #f0f0f2;\n        margin: 0;\n        padding: 0;\n        font-family: -apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n        \n    }\n    div {\n        width: 600px;\n        margin: 5em auto;\n        padding: 2em;\n        background-color: #fdfdff;\n        border-radius: 0.5em;\n        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);\n    }\n    a:link, a:visited {\n        color: #38488f;\n        text-decoration: none;\n    }\n    @media (max-width: 700px) {\n        div {\n            margin: 0 auto;\n            width: auto;\n        }\n    }\n    </style>    \n</head>\n\n<body>\n<div>\n    <h1>Example Domain</h1>\n    <p>This domain is for use in illustrative examples in documents. You may use this\n    domain in literature without prior coordination or asking for permission.</p>\n    <p><a href=\"https://www.iana.org/domains/example\">More information...</a></p>\n</div>\n\n\n</body></html>","success":true},"timestamp":"2025-02-01T18:44:27.248Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"POST","path":"/execute/get_system_info","timestamp":"2025-02-01T18:44:27.251Z"}
+{"level":"debug","message":"Executing tool: get_system_info","params":{},"timestamp":"2025-02-01T18:44:27.252Z"}
+{"level":"debug","message":"Tool execution result: get_system_info","result":{"data":{"cpu":{"architecture":"x64","cores":16,"loadAverage":[0,0,0],"model":"11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz"},"memory":{"free":"15.95 GB","percentUsed":"49.80%","total":"31.77 GB","used":"15.82 GB"},"os":{"hostname":"gamebot","platform":"win32","release":"10.0.26100","uptime":"3 hours, 35 minutes","version":"Windows 11 Pro"}},"success":true},"timestamp":"2025-02-01T18:44:27.259Z"}
+{"body":{"path":"test.txt"},"level":"info","message":"Incoming request","method":"POST","path":"/execute/delete_file","timestamp":"2025-02-01T18:44:27.263Z"}
+{"level":"debug","message":"Executing tool: delete_file","params":{"path":"test.txt"},"timestamp":"2025-02-01T18:44:27.263Z"}
+{"level":"debug","message":"Tool execution result: delete_file","result":{"data":"File deleted successfully: test.txt","success":true},"timestamp":"2025-02-01T18:44:27.264Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:44:30.814Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:44:36.806Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:44:42.811Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:44:48.835Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:44:54.830Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:45:00.822Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:45:06.866Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:45:12.855Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:45:18.934Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:45:24.889Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:45:31.192Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:45:37.617Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:45:44.723Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:45:52.413Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:45:59.637Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:46:08.981Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:46:14.817Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:46:20.811Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:46:26.812Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:46:32.807Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:46:38.820Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:46:44.833Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:46:50.827Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:46:56.825Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:47:02.845Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:47:08.840Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:47:14.891Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:47:20.897Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:47:26.951Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:47:33.281Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:47:39.993Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:47:47.068Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:47:56.081Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:48:06.097Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:48:14.575Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:48:19.816Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:48:25.818Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:48:31.812Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:48:37.814Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:48:43.812Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:48:49.815Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:48:55.826Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:49:01.824Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:49:07.835Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:49:13.854Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:49:19.869Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:49:25.925Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:49:31.897Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:49:37.991Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:49:44.693Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:49:51.393Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:50:01.516Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:50:11.101Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:50:16.809Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:50:22.812Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:50:28.817Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:50:34.819Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:50:40.809Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:50:46.835Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:50:52.830Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:50:58.810Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:51:04.843Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:51:10.838Z"}
+{"body":{},"level":"info","message":"Incoming request","method":"GET","path":"/","timestamp":"2025-02-01T18:51:16.864Z"}

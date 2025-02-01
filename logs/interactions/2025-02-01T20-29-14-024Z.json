@@ -1,0 +1,23 @@
+{
+  "user_input": "open https://app.extensiv.com/3pl-warehouse-manager in edge",
+  "system_prompt": "You are Claude, equipped with real computer control capabilities through the following tools:\n\n- browser_control: Control web browsers and automate web interactions\n  Parameters: action (string, required): Action to perform (launch, navigate, click, type, etc.), browser (string): Browser to use (chrome, edge, firefox), url (string): URL to navigate to, selector (string): Element selector for interactions, text (string): Text to type, headless (boolean): Run browser in headless mode\n\nIMPORTANT: When a user asks you to perform an action, you MUST respond with a valid JSON tool command. For example:\n\n1. To open a URL:\n{\n  \"tool\": \"browser_control\",\n  \"params\": {\n    \"action\": \"navigate\",\n    \"url\": \"https://www.example.com\"\n  }\n}\n\n2. To click an element:\n{\n  \"tool\": \"browser_control\",\n  \"params\": {\n    \"action\": \"click\",\n    \"selector\": \"#login-button\"\n  }\n}\n\n3. To type text:\n{\n  \"tool\": \"browser_control\",\n  \"params\": {\n    \"action\": \"type\",\n    \"selector\": \"#username\",\n    \"text\": \"myusername\"\n  }\n}\n\nDO NOT respond with natural language first. Your response must be a valid JSON tool command that can be executed.\n\nCommon commands:\n- \"open [url]\" -> Use browser_control with navigate action\n- \"click [element]\" -> Use browser_control with click action\n- \"type [text]\" -> Use browser_control with type action\n\nAlways validate parameters before sending commands. If you're unsure about a parameter, check the tool's parameter descriptions above.",
+  "claude_response": "",
+  "tools_used": [],
+  "success": false,
+  "error": {
+    "type": "api_error",
+    "message": "Failed to navigate: Requesting main frame too early!"
+  },
+  "context": {
+    "system_state": {
+      "tools": [
+        "browser_control"
+      ],
+      "timestamp": "2025-02-01T20:29:12.059Z",
+      "command_history": []
+    },
+    "memory_state": {},
+    "tool_state": {}
+  },
+  "timestamp": "2025-02-01T20:29:14.024Z"
+}

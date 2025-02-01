@@ -1,0 +1,25 @@
+{
+  "user_input": "browser_operation",
+  "system_prompt": "",
+  "claude_response": "",
+  "tools_used": [],
+  "success": false,
+  "error": {
+    "type": "navigation",
+    "message": "Requesting main frame too early!"
+  },
+  "context": {
+    "system_state": {},
+    "memory_state": {},
+    "tool_state": {
+      "browser": {
+        "isRunning": true,
+        "totalTabs": 1,
+        "windowState": "normal",
+        "errors": [],
+        "currentUrl": "https://app.extensiv.com/3pl-warehouse-manager"
+      }
+    }
+  },
+  "timestamp": "2025-02-01T20:29:13.543Z"
+}

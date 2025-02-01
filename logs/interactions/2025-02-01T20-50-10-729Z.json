@@ -1,0 +1,289 @@
+{
+  "user_input": "stats",
+  "system_prompt": "You are Claude, equipped with real computer control capabilities through specialized tools. You have DIRECT control over the computer and can perform any action a human user could do.\n\nAVAILABLE TOOLS:\nbrowser_control:\n  Description: Control web browsers and automate web interactions\n  Parameters:\n    action (required): Action to perform (launch, navigate, click, type, screenshot, close) (string)\n    browser: Browser to use (chrome, edge, firefox) (string)\n    url: URL to navigate to (string)\n    selector: Element selector for interactions (string)\n    text: Text to type (string)\n    headless: Run browser in headless mode (boolean)\n\nsystem_control:\n  Description: Control system with keyboard and mouse\n  Parameters:\n    action (required): Action to perform (type, press, click, move, drag, get_mouse_pos) (string)\n    text: Text to type (string)\n    keys: Keys to press (for keyboard shortcuts) (array)\n    x: X coordinate for mouse actions (number)\n    y: Y coordinate for mouse actions (number)\n    button: Mouse button (left, right) (string)\n\nread_file:\n  Description: Read the contents of a file\n  Parameters:\n    path (required): Path to the file to read (string)\n\nwrite_file:\n  Description: Write content to a file\n  Parameters:\n    path (required): Path to write the file to (string)\n    content (required): Content to write to the file (string)\n    append: Whether to append to existing content (boolean)\n\nlist_files:\n  Description: List files in a directory\n  Parameters:\n    path (required): Directory path to list files from (string)\n    recursive: Whether to list files recursively (boolean)\n\ndelete_file:\n  Description: Delete a file\n  Parameters:\n    path (required): Path to the file to delete (string)\n\nsearch_file_content:\n  Description: Search for content in files\n  Parameters:\n    path (required): Directory path to search in (string)\n    pattern (required): Pattern to search for (string)\n    recursive: Whether to search recursively (boolean)\n\nexecute_command:\n  Description: Execute a system command\n  Parameters:\n    command (required): Command to execute (string)\n    cwd: Working directory for command execution (string)\n\nlaunch_application:\n  Description: Launch an application\n  Parameters:\n    app (required): Application name or path (string)\n    args: Application arguments (array)\n\nget_system_info:\n  Description: Get system information\n  Parameters:\n    type: Type of information (cpu, memory, disk, network, all) (string)\n\nprocess_control:\n  Description: Control system processes\n  Parameters:\n    action (required): Action to perform (list, kill) (string)\n    pid: Process ID for kill action (number)\n    filter: Filter for list action (string)\n\nCOMMAND PATTERNS:\n1. Browser Control:\n   - \"open [url]\" -> Use browser_control with navigate action\n   - \"click [element]\" -> Use browser_control with click action\n   - \"type [text]\" -> Use browser_control with type action\n\n2. System Control:\n   - \"click at [x,y]\" -> Use system_control with click action\n   - \"type [text]\" -> Use system_control with type action\n   - \"press [keys]\" -> Use system_control with press action\n\n3. File Operations:\n   - \"read [file]\" -> Use read_file action\n   - \"write [file]\" -> Use write_file action\n   - \"list files in [dir]\" -> Use list_files action\n\nEXAMPLE COMMANDS:\n1. Open a website:\n{\n  \"tool\": \"browser_control\",\n  \"params\": {\n    \"action\": \"navigate\",\n    \"url\": \"https://www.example.com\"\n  }\n}\n\n2. Click at coordinates:\n{\n  \"tool\": \"system_control\",\n  \"params\": {\n    \"action\": \"click\",\n    \"x\": 500,\n    \"y\": 300\n  }\n}\n\n3. Read a file:\n{\n  \"tool\": \"read_file\",\n  \"params\": {\n    \"path\": \"example.txt\"\n  }\n}\n\nIMPORTANT RULES:\n\n1. ALWAYS respond with valid JSON tool commands. Your response must be a complete, executable command like:\n{\n  \"tool\": \"tool_name\",\n  \"params\": {\n    \"param1\": \"value1\",\n    \"param2\": \"value2\"\n  }\n}\n\n2. DO NOT:\n   - Respond with natural language first\n   - Say you cannot perform actions\n   - Ask for unnecessary confirmation\n   - Forget your capabilities\n\n3. DO:\n   - Use tools directly to perform actions\n   - Maintain state between commands\n   - Handle errors gracefully\n   - Provide clear progress updates\n\n4. Error Handling:\n   - If a tool fails, it will automatically attempt recovery\n   - You can retry commands with different parameters\n   - You can try alternative approaches\n   - Always check tool results\n\n5. State Management:\n   - Tools maintain their state between commands\n   - Browser sessions persist until explicitly closed\n   - System control actions are cumulative\n   - File operations are permanent\n\nRemember: You have REAL control over this computer through these tools. When asked to perform an action, use the appropriate tool to execute it directly.",
+  "claude_response": "{\n    \"tool\": \"get_system_info\",\n    \"params\": {\n        \"type\": \"all\"\n    }\n}",
+  "tools_used": [
+    {
+      "name": "get_system_info",
+      "params": {
+        "type": "all"
+      },
+      "result": {
+        "success": true,
+        "data": {
+          "cpu": {
+            "arch": "x64",
+            "cpus": [
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 745546,
+                  "nice": 0,
+                  "sys": 2241140,
+                  "idle": 17484421,
+                  "irq": 531890
+                }
+              },
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 520734,
+                  "nice": 0,
+                  "sys": 617953,
+                  "idle": 19332312,
+                  "irq": 55875
+                }
+              },
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 2669875,
+                  "nice": 0,
+                  "sys": 1473125,
+                  "idle": 16328000,
+                  "irq": 53359
+                }
+              },
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 558359,
+                  "nice": 0,
+                  "sys": 498828,
+                  "idle": 19413812,
+                  "irq": 24437
+                }
+              },
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 1364781,
+                  "nice": 0,
+                  "sys": 1024984,
+                  "idle": 18081234,
+                  "irq": 43375
+                }
+              },
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 768109,
+                  "nice": 0,
+                  "sys": 586875,
+                  "idle": 19116015,
+                  "irq": 29250
+                }
+              },
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 1431046,
+                  "nice": 0,
+                  "sys": 1048609,
+                  "idle": 17991343,
+                  "irq": 43281
+                }
+              },
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 763046,
+                  "nice": 0,
+                  "sys": 631750,
+                  "idle": 19076203,
+                  "irq": 29000
+                }
+              },
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 1120125,
+                  "nice": 0,
+                  "sys": 948437,
+                  "idle": 18402437,
+                  "irq": 46953
+                }
+              },
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 513781,
+                  "nice": 0,
+                  "sys": 503843,
+                  "idle": 19453375,
+                  "irq": 26765
+                }
+              },
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 1193546,
+                  "nice": 0,
+                  "sys": 949765,
+                  "idle": 18327687,
+                  "irq": 39796
+                }
+              },
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 615515,
+                  "nice": 0,
+                  "sys": 500796,
+                  "idle": 19354687,
+                  "irq": 23671
+                }
+              },
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 1153062,
+                  "nice": 0,
+                  "sys": 1124515,
+                  "idle": 18193421,
+                  "irq": 43093
+                }
+              },
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 475921,
+                  "nice": 0,
+                  "sys": 394140,
+                  "idle": 19600937,
+                  "irq": 24750
+                }
+              },
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 980984,
+                  "nice": 0,
+                  "sys": 1022812,
+                  "idle": 18467203,
+                  "irq": 42875
+                }
+              },
+              {
+                "model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+                "speed": 2304,
+                "times": {
+                  "user": 692515,
+                  "nice": 0,
+                  "sys": 471796,
+                  "idle": 19306687,
+                  "irq": 23906
+                }
+              }
+            ],
+            "loadAvg": [
+              0,
+              0,
+              0
+            ]
+          },
+          "memory": {
+            "total": 34115739648,
+            "free": 14385713152,
+            "usedPercent": "57.83"
+          },
+          "disk": "Caption  FreeSpace     Size           \r\r\nC:       517497188352  1021821579264",
+          "network": {
+            "interfaces": {
+              "Wi-Fi": [
+                {
+                  "address": "fe80::eed1:a7e2:78cf:7368",
+                  "netmask": "ffff:ffff:ffff:ffff::",
+                  "family": "IPv6",
+                  "mac": "50:84:92:39:c6:b9",
+                  "internal": false,
+                  "cidr": "fe80::eed1:a7e2:78cf:7368/64",
+                  "scopeid": 4
+                },
+                {
+                  "address": "192.168.50.52",
+                  "netmask": "255.255.255.0",
+                  "family": "IPv4",
+                  "mac": "50:84:92:39:c6:b9",
+                  "internal": false,
+                  "cidr": "192.168.50.52/24"
+                }
+              ],
+              "Loopback Pseudo-Interface 1": [
+                {
+                  "address": "::1",
+                  "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+                  "family": "IPv6",
+                  "mac": "00:00:00:00:00:00",
+                  "internal": true,
+                  "cidr": "::1/128",
+                  "scopeid": 0
+                },
+                {
+                  "address": "127.0.0.1",
+                  "netmask": "255.0.0.0",
+                  "family": "IPv4",
+                  "mac": "00:00:00:00:00:00",
+                  "internal": true,
+                  "cidr": "127.0.0.1/8"
+                }
+              ],
+              "vEthernet (Default Switch)": [
+                {
+                  "address": "fe80::ca4b:277c:9a30:4077",
+                  "netmask": "ffff:ffff:ffff:ffff::",
+                  "family": "IPv6",
+                  "mac": "00:15:5d:32:33:00",
+                  "internal": false,
+                  "cidr": "fe80::ca4b:277c:9a30:4077/64",
+                  "scopeid": 23
+                },
+                {
+                  "address": "172.31.160.1",
+                  "netmask": "255.255.240.0",
+                  "family": "IPv4",
+                  "mac": "00:15:5d:32:33:00",
+                  "internal": false,
+                  "cidr": "172.31.160.1/20"
+                }
+              ]
+            },
+            "hostname": "gamebot"
+          },
+          "platform": "win32",
+          "release": "10.0.26100",
+          "uptime": 20471.89,
+          "userInfo": {
+            "uid": -1,
+            "gid": -1,
+            "username": "Hassan",
+            "homedir": "C:\\Users\\Hassan",
+            "shell": null
+          }
+        }
+      }
+    }
+  ],
+  "success": true,
+  "context": {
+    "system_state": {},
+    "memory_state": {},
+    "tool_state": {}
+  },
+  "timestamp": "2025-02-01T20:50:10.729Z"
+}
