@@ -275,3 +275,7 @@
 {"level":"debug","message":"Registering tool: get_system_info","metadata":{"timestamp":"2025-02-01T21:47:31.005Z"},"timestamp":"2025-02-01T21:47:31.005Z"}
 {"level":"debug","message":"Registering tool: process_control","metadata":{"timestamp":"2025-02-01T21:47:31.005Z"},"timestamp":"2025-02-01T21:47:31.005Z"}
 {"level":"debug","message":"Registering tool: browser_control","metadata":{"timestamp":"2025-02-01T21:47:31.005Z"},"timestamp":"2025-02-01T21:47:31.005Z"}
+{"level":"debug","message":"Executing tool command","metadata":{"params":{"app":"msedge","args":["https://app.extensiv.com/3pl-warehouse-manager"]},"timestamp":"2025-02-02T00:04:25.641Z","tool":"launch_application"},"timestamp":"2025-02-02T00:04:25.642Z"}
+{"level":"debug","message":"Executing tool: launch_application","metadata":{"params":{"app":"msedge","args":["https://app.extensiv.com/3pl-warehouse-manager"]},"timestamp":"2025-02-02T00:04:25.642Z"},"timestamp":"2025-02-02T00:04:25.643Z"}
+{"level":"debug","message":"Tool execution result:","metadata":{"result":{"data":{"message":"Application launched: msedge","stderr":"","stdout":""},"success":true},"timestamp":"2025-02-02T00:04:25.820Z","toolName":"launch_application"},"timestamp":"2025-02-02T00:04:25.820Z"}
+{"level":"debug","message":"Logged interaction","metadata":{"filename":"2025-02-02T00-04-25-820Z.json","timestamp":"2025-02-02T00:04:25.826Z"},"timestamp":"2025-02-02T00:04:25.826Z"}
