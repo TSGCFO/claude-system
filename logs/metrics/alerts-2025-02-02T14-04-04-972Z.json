@@ -1,0 +1,11 @@
+[
+  {
+    "timestamp": "2025-02-02T14:04:04.972Z",
+    "type": "performance",
+    "severity": "critical",
+    "message": "Response time exceeded threshold",
+    "metrics": {
+      "responseTime": 10606
+    }
+  }
+]

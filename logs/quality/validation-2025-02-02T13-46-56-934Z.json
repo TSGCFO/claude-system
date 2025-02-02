@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-02-02T13:46:56.934Z",
+  "response": {
+    "command": "Hello, what can you do?"
+  },
+  "result": {
+    "passed": true,
+    "score": 1,
+    "issues": [],
+    "suggestions": []
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "general-adapted-1738504016937",
+  "expertise": [
+    "general-purpose",
+    "basic-tasks",
+    "command-processing"
+  ],
+  "capabilities": [
+    "basic-tools",
+    "simple-responses"
+  ],
+  "constraints": {
+    "maxComplexity": 5,
+    "allowedTools": [
+      "basic",
+      "anthropic-api"
+    ],
+    "responseFormat": [
+      "text",
+      "simple-json"
+    ]
+  },
+  "adaptations": [
+    {
+      "timestamp": "2025-02-02T13:46:56.937Z",
+      "trigger": "no_suitable_role",
+      "changes": {
+        "expertise": [
+          "general-purpose",
+          "basic-tasks",
+          "command-processing"
+        ],
+        "capabilities": [
+          "basic-tools",
+          "simple-responses"
+        ],
+        "constraints": {
+          "maxComplexity": 5,
+          "allowedTools": [
+            "basic",
+            "anthropic-api"
+          ],
+          "responseFormat": [
+            "text",
+            "simple-json"
+          ]
+        }
+      },
+      "effectiveness": 0
+    }
+  ]
+}

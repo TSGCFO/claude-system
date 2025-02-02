@@ -1,0 +1,22 @@
+{
+  "name": "technical",
+  "expertise": [
+    "software-development",
+    "system-architecture"
+  ],
+  "capabilities": [
+    "code-analysis",
+    "technical-writing"
+  ],
+  "constraints": {
+    "maxComplexity": 8,
+    "allowedTools": [
+      "all"
+    ],
+    "responseFormat": [
+      "text",
+      "code",
+      "json"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "general",
+  "expertise": [
+    "general-purpose",
+    "basic-tasks"
+  ],
+  "capabilities": [
+    "basic-tools",
+    "simple-responses"
+  ],
+  "constraints": {
+    "maxComplexity": 5,
+    "allowedTools": [
+      "basic"
+    ],
+    "responseFormat": [
+      "text",
+      "simple-json"
+    ]
+  }
+}
