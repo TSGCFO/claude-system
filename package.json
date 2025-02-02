@@ -8,7 +8,7 @@
     "build": "tsc",
     "start": "node --experimental-modules dist/server.js",
     "cli": "node --experimental-modules dist/cli.js",
-    "dev": "ts-node-dev --respawn src/server.ts",
+    "dev": "node --loader ts-node/esm src/server.ts",
     "test": "jest",
     "lint": "eslint src/**/*.ts",
     "format": "prettier --write \"src/**/*.ts\"",
@@ -17,9 +17,11 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.36.3",
+    "@types/cors": "^2.8.17",
     "active-win": "^9.0.0",
     "axios": "^1.6.5",
     "chalk": "^5.3.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-rate-limit": "^7.1.5",
@@ -28,6 +30,7 @@
     "node-key-sender": "^1.0.11",
     "puppeteer": "^21.7.0",
     "robotjs": "^0.6.0",
+    "ts-node": "^10.9.2",
     "winston": "^3.11.0"
   },
   "devDependencies": {
